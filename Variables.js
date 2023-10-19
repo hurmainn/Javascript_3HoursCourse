@@ -18,7 +18,7 @@ console.log("b: "+b)
 console.log("type of b: "+typeof(b))
 
 //boolean variable
-var c=true
+let c=true
 console.log("c: "+c)
 console.log("type of c: "+typeof(c))
 
@@ -35,14 +35,16 @@ console.log("type of e: "+typeof(e))
 //Assignment Operators
 a=10    //can again assign a new value to already created value
 b=20
-var c=a+b
+c=a+b
 let f=a+b
 console.log("f: "+f)
 
+//let c=a+b :error because c has already been declared with let
 //var keyword allows to again create the variable, but let doesb't allow to freshly create the already created variable, you can only assign value to that
+//redeclaring is not allowed, but reassigning is allowed
 
 //not operator !
 var booleanvariable=true
-console.log(!booleanvariable)   //will print false
+console.log(!booleanvariable)   //will print false because we redeclared the variable
 
-
+//reassigning is not allowed with const

@@ -1,5 +1,5 @@
 //CLASSES IN JAVASCRIPT , INTRODUCED FROM ES6 ENGINE
-class Person {
+export class Person {
     firstName = "Hurmain"
     lastName = "Javaid"
     age = 22
@@ -22,12 +22,12 @@ class Person {
     }
 }
 
-//accessing prperties of classes require objects
-let person = new Person()
-console.log("First Name: ", person.firstName)
-console.log("Location: ", person.location)    //location is a getter 
+// //accessing prperties of classes require objects
+// let person = new Person()
+// console.log("First Name: ", person.firstName)
+// console.log("Location: ", person.location)    //location is a getter 
 
-//using constructor
-let person2=new Person("Abdullah","Javaid")
-let fullNameE=person2.fullName()
-console.log(fullNameE)
+// //using constructor
+// let person2=new Person("Abdullah","Javaid")
+// let fullNameE=person2.fullName()
+// console.log(fullNameE)

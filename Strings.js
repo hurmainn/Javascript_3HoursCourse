@@ -54,7 +54,7 @@ console.log("Index of day in day3 string: ", indexinDay3)
 let days = "mondaytuesdaywednesday"
 let indexOfdayIndays = days.indexOf("day")
 let count = 0
-while (indexOfdayIndays != -1) {    //index will be minus 1 when string ends
+while (indexOfdayIndays !== -1) {    //index will be minus 1 when string ends, thn the loop ends
     count++
     indexOfdayIndays = days.indexOf("day", indexOfdayIndays + 1)
     /*The second argument, indexOfdayIndays + 1,
@@ -65,4 +65,6 @@ while (indexOfdayIndays != -1) {    //index will be minus 1 when string ends
      for the next occurrence of "day" in the array, 
     effectively skipping the previously found occurrence.*/
 }
-console.log("Occurence of day in the string: ",count," times.")
+console.log("Occurrence of day in the string: ",count," times.")
+
+

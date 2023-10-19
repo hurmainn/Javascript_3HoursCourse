@@ -33,13 +33,15 @@ console.log(greet)  //now accessible, but only afternooon waala
 //let
 //but if we use let it will be not overwritten, it will be good afternoon only inside the if blick
 let greetGlobalLet="GOOD MORNING LET"
+let greetGlobalLet2="GOOD MORNING LET 2"
 console.log("greet global let outside if block - before overwriting: ",greetGlobalLet)
 if(1==1){
   //  console.log("greet global let inside if block - before overwriting: ",greetGlobalLet)   //can access it here but not after declaring it with let again in this block
-    greetGlobalLet="GOOD AFTERNOON LET"
+    greetGlobalLet2="GOOD AFTERNOON LET 2" //OVERWHITTEN GLOBALLY
+    let greetGlobalLet="GOOD AFTERNOON LET" //dealt as a new variable, 
     console.log("greet global let inside if block - after overwriting: ",greetGlobalLet)
 }
 console.log("greet global let outside if block - after overwriting: ",greetGlobalLet)
 
 //let can't be redeclared, var can be
-
+//const , no redeclaraction no re initialization
